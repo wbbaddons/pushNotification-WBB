@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="de">
+	<category name="wbb.thread">
+		<item name="wbb.thread.notification.newPost"><![CDATA[Dieses Thema hat soeben eine neue Antwort erhalten.]]></item>
+	</category>
+</language>
