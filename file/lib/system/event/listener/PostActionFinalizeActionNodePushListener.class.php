@@ -20,7 +20,7 @@ class PostActionFinalizeActionNodePushListener implements \wcf\system\event\IEve
 			case 'create':
 				$parameters = $eventObj->getParameters();
 				
-				\wcf\system\nodePush\NodePushHandler::getInstance()->sendMessage('be.bastelstu.wbb.pushNotification.thread.'.$parameters['data']['threadID'].'.newPost');
+				\wcf\system\push\PushHandler::getInstance()->sendMessage('be.bastelstu.wbb.pushNotification.thread.'.$parameters['data']['threadID'].'.newPost');
 		}
 	}
 }
