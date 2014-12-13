@@ -5,8 +5,8 @@
 		<packagename language="en"><![CDATA[Push notifications (WBB)]]></packagename>
 		<packagedescription language="de"><![CDATA[Zeigt ein Benachrichtigungs-Pop-Up bei neuen Antworten im Thema an.]]></packagedescription>
 		<packagedescription language="en"><![CDATA[Shows a notification pop-up when the current thread receives a reply.]]></packagedescription>
-		<version>1.1.0</version>
-		<date>2014-09-20</date>
+		<version>1.1.1</version>
+		<date>2014-12-13</date>
 	</packageinformation>
 	
 	<authorinformation>

@@ -2,7 +2,7 @@
 namespace wbb\system\event\listener;
 
 /**
- * Sends notifications to users via nodePush
+ * Sends notifications to users via Push
  * 
  * @author	Tim Düsterhus
  * @copyright	2014 Tim Düsterhus
