@@ -16,11 +16,12 @@ class PostActionFinalizeActionNodePushListener implements \wcf\system\event\IEve
 	 */
 	public function execute($eventObj, $className, $eventName) {
 		switch ($eventObj->getActionName()) {
-			case 'quickReply':
-			case 'create':
-				$parameters = $eventObj->getParameters();
+			case 'triggerPublication':
+				$objects = $eventObj->getObjects();
 				
-				\wcf\system\push\PushHandler::getInstance()->sendMessage('be.bastelstu.wbb.pushNotification.thread.'.$parameters['data']['threadID'].'.newPost');
+				foreach ($objects as $post) {
+					\wcf\system\push\PushHandler::getInstance()->sendMessage('be.bastelstu.wbb.pushNotification.thread.'.$post->getThread()->threadID.'.newPost');
+				}
 		}
 	}
 }
