@@ -7,10 +7,10 @@ be.bastelstu.wbb.pushNotification.tar: files.tar files_wcf.tar *.xml language/*.
 	tar cvf be.bastelstu.wbb.pushNotification.tar --numeric-owner --exclude-vcs -- files.tar files_wcf.tar *.xml language/*.xml LICENSE
 
 files.tar: $(FILES)
-	tar cvf files.tar --exclude-vcs --transform='s,files/,,' -- $(FILES)
+	tar cvf files.tar --numeric-owner --exclude-vcs --transform='s,files/,,' -- $(FILES)
 
 files_wcf.tar: $(WCF_FILES)
-	tar cvf files_wcf.tar --exclude-vcs --transform='s,files_wcf/,,' -- $(WCF_FILES)
+	tar cvf files_wcf.tar --numeric-owner --exclude-vcs --transform='s,files_wcf/,,' -- $(WCF_FILES)
 
 clean:
 	-rm -f files.tar
