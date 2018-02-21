@@ -24,7 +24,10 @@ class PostActionFinalizeActionNodePushListener implements \wcf\system\event\IEve
 					$payload = [ 'userID' => (int) $post->userID
 					           , 'username' => $post->username
 					           ];
-					\wcf\system\push\PushHandler::getInstance()->sendMessage('be.bastelstu.wbb.pushNotification.newPost.'.$post->getThread()->threadID, [ ], $payload);
+					\wcf\system\push\PushHandler::getInstance()->sendMessage([
+						'message' => 'be.bastelstu.wbb.pushNotification.newPost.'.$post->getThread()->threadID,
+						'payload' => $payload
+					]);
 				}
 		}
 	}
