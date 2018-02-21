@@ -13,4 +13,12 @@
 {/if}]]></templatecode>
 		</templatelistener>
 	</import>
+
+	<delete>
+		<templatelistener name="postNodePushListener">
+			<environment>user</environment>
+			<templatename>headInclude</templatename>
+			<eventname>javascriptInit</eventname>
+		</templatelistener>
+	</delete>
 </data>
